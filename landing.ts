@@ -5,6 +5,7 @@ export function serveLandingPage(): Response {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GitPro - GitHub 加速镜像</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238b5cf6'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Cpath d='M50 15C30.67 15 15 30.67 15 50c0 15.53 10.06 28.68 24.02 33.33 1.76.31 2.42-.75 2.42-1.67 0-.84-.04-3.6-.04-6.54-8.83 1.62-11.12-2.15-11.82-4.13-.4-1.01-2.11-4.13-3.6-4.96-1.23-.66-2.99-2.29-.04-2.33 2.77-.04 4.75 2.55 5.41 3.6 3.16 5.32 8.22 3.82 10.24 2.9.31-2.29 1.23-3.82 2.24-4.7-7.83-.88-16-3.91-16-17.36 0-3.82 1.36-6.98 3.6-9.44-.35-.88-1.58-4.48.35-9.31 0 0 2.95-.92 9.67 3.6 2.81-.79 5.8-1.19 8.79-1.19s5.98.4 8.79 1.19c6.72-4.56 9.67-3.6 9.67-3.6 1.93 4.83.7 8.43.35 9.31 2.24 2.46 3.6 5.58 3.6 9.44 0 13.49-8.22 16.48-16.04 17.36 1.27 1.1 2.37 3.21 2.37 6.5 0 4.7-.04 8.48-.04 9.67 0 .92.66 2.02 2.42 1.67C74.94 78.68 85 65.49 85 50c0-19.33-15.67-35-35-35z' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
