@@ -1,0 +1,12 @@
+{
+  "name": "gitpro",
+  "version": "1.0.0",
+  "exports": "./main.ts",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch main.ts",
+    "start": "deno run --allow-net --allow-env main.ts"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  }
+}
