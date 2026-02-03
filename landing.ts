@@ -18,18 +18,11 @@ export function serveLandingPage(): Response {
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       min-height: 100vh;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #5ee7df 75%, #667eea 100%);
-      background-size: 400% 400%;
-      animation: gradientShift 15s ease infinite;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 20px;
-    }
-    
-    @keyframes gradientShift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
     }
     
     .container {
@@ -38,13 +31,15 @@ export function serveLandingPage(): Response {
     }
     
     .card {
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(40px) saturate(120%);
+      -webkit-backdrop-filter: blur(40px) saturate(120%);
       border-radius: 24px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
       padding: 48px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 0 80px rgba(255, 255, 255, 0.1);
     }
     
     .header {
@@ -88,19 +83,21 @@ export function serveLandingPage(): Response {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(34, 197, 94, 0.2);
-      border: 1px solid rgba(34, 197, 94, 0.4);
+      background: rgba(34, 197, 94, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(34, 197, 94, 0.5);
       padding: 6px 12px;
       border-radius: 20px;
       font-size: 12px;
-      color: #22c55e;
+      color: #4ade80;
       margin-left: auto;
     }
     
     .status-dot {
       width: 8px;
       height: 8px;
-      background: #22c55e;
+      background: #4ade80;
       border-radius: 50%;
       animation: pulse 2s ease-in-out infinite;
     }
@@ -138,21 +135,23 @@ export function serveLandingPage(): Response {
       width: 100%;
       padding: 16px 16px 16px 160px;
       font-size: 15px;
-      border: 2px solid rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.3);
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       color: white;
       outline: none;
       transition: all 0.2s ease;
     }
     
     input::placeholder {
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.5);
     }
     
     input:focus {
-      border-color: rgba(255, 255, 255, 0.5);
-      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.25);
     }
     
     .btn {
@@ -191,17 +190,19 @@ export function serveLandingPage(): Response {
     }
     
     .usage-item {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-radius: 12px;
       padding: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       transition: all 0.2s ease;
       cursor: pointer;
     }
     
     .usage-item:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.4);
     }
     
     .usage-label {
@@ -245,7 +246,9 @@ export function serveLandingPage(): Response {
     .feature-icon {
       width: 48px;
       height: 48px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-radius: 12px;
       display: flex;
       align-items: center;
